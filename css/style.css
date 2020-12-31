@@ -1,0 +1,170 @@
+/** Typography **/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Lobster&display=swap");
+/** Reset CSS **/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/** Mixin **/
+/** header area **/
+header {
+  background-color: #24ccff;
+}
+header .logo {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+}
+header .menu {
+  padding-top: 10px;
+}
+header .menu li {
+  list-style: none;
+  display: inline-block;
+}
+header .menu li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+header .menu li a:hover {
+  color: #000;
+}
+
+/** Main Content **/
+.main-content {
+  background: url(../img/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: 100% 100%;
+  position: relative;
+}
+.main-content .main-content-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.main-content .main-content-wrapper h1 {
+  color: #24ccff;
+  font-size: 100px;
+  font-family: "Lobster", cursive;
+  padding-bottom: 20px;
+}
+.main-content .main-content-wrapper h5 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+/** Portfolio content **/
+.portfolio-section .portfolio-title {
+  padding: 30px 0;
+}
+.portfolio-section .portfolio-title h1 {
+  color: #24ccff;
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+  padding-bottom: 20px;
+}
+.portfolio-section .portfolio-title h5 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+.portfolio-section .portfolio-content .portfolio-upper {
+  margin-bottom: 25px;
+}
+.portfolio-section .portfolio-content .overlay-relative {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-section .portfolio-content .overlay-relative:hover .over-lay {
+  top: 0;
+  cursor: pointer;
+}
+.portfolio-section .portfolio-content .over-lay {
+  background-color: #281818c4;
+  position: absolute;
+  left: 15px;
+  top: -100%;
+  width: 92%;
+  height: 100%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.portfolio-section .portfolio-content .over-lay p {
+  color: #fff;
+  padding: 40px;
+}
+
+/** Contact Section **/
+.contact-section {
+  background-color: #0d0000cc;
+  height: 100px;
+  position: relative;
+}
+.contact-section button {
+  background-color: transparent;
+  border: 1px solid #24ccff;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.contact-section button:hover::after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+.contact-section button::after {
+  content: "";
+  background-color: #24ccff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+/*# sourceMappingURL=style.css.map */

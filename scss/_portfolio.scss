@@ -1,0 +1,46 @@
+/** Portfolio content **/
+
+.portfolio-section {
+    .portfolio-title {
+      padding: 30px 0;
+  
+      h1 {
+        @include title(50px);
+      }
+      h5 {
+        @include sub_title;
+      }
+    }
+  
+    .portfolio-content {
+      .portfolio-upper {
+        margin-bottom: 25px;
+      }
+      .overlay-relative {
+        position: relative;
+        overflow: hidden;
+  
+        &:hover .over-lay {
+          top: 0;
+          cursor: pointer;
+        }
+      }
+      .over-lay {
+        background-color: #281818c4;
+        position: absolute;
+        left: 15px;
+        top: -100%;
+        width: 92%;
+        height: 100%;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        p {
+          color: $menu-color;
+          padding: 40px;
+        }
+      }
+    }
+  }
